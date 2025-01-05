@@ -16,4 +16,9 @@ class Profile extends Model
     'hobby' => 'required',
     'introduction' => 'required',
     );
+    
+    public function actions()
+    {
+        return $this->hasMany('App\Models\Action');
+    }
 }
